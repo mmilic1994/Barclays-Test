@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h3>Exchange Rates</h3>
+  </header>
+  <main>
+    <div class="container">
+      <div class="left">
+        <div class="base_currency">
+          <label for="base_currency">Base</label>
+          <select id="base_currency">
+            <option value="EUR" selected>EUR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="JPY">JPY</option>
+          </select>
+        </div>
+
+        <div class="date">
+          <div action="/action_page.php">
+            Date <input type="date" name="date" id="date_picker">
+            <br> <br>
+            <input type="submit" value="Display" id="display">
+          </div>
+        </div>
+      </div>
+
+      <div class="table">
+        <table id="myTable">
+            <tr>
+              <thead>
+                <th>Currency</th>
+                <th>Buy</th>
+                <th>Sell</th>
+              </thead>
+            </tr>
+            <tbody id="data">
+
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>

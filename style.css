@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h3 {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.left {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.base_currency {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
+
+.date {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+
+}
+
+
+.table {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+table, th, td {
+  border: 1px solid #000000;
+  width: 300px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  
+  
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
